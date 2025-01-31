@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">user</th>
+        <th scope="col">Fact</th>
+        <th scope="col">Source</th>
+        <th scope="col">Created At</th>
+        <th scope="col">Updated At</th>
+        <th scope="col">Status</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let facts of catFacts">
+        <th scope="row">{{facts.id}}</th>
+        <td colspan="2">{{facts.user}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
