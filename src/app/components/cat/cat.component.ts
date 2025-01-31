@@ -15,6 +15,7 @@ export class CatComponent implements OnInit {
   getCatFacts(){
     this.catService.getCatFacts().subscribe((data:any)=>{
       console.log(data)
+      this.catFacts=data
     })
   }
   ngOnInit(): void {

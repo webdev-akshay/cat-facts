@@ -10,6 +10,6 @@ export class CatService {
   constructor(private http:HttpClient) { }
 
   getCatFacts():Observable<any>{
-   return this.http.get(`${this.apiUrl}/facts`)
+   return this.http.get<any[]>(`${this.apiUrl}/facts`)
   }
 }
